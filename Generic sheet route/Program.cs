@@ -124,6 +124,29 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q10
+        //public interface IPrintable
+        //{
+        //    void Print();
+        //}
+
+        //public class Printer<T> where T : IPrintable
+        //{
+        //    public void PrintItem(T item)
+        //    {
+        //        item.Print();
+        //    }
+        //}
+
+        //public class Book : IPrintable
+        //{
+        //    public string Title = "C# Book";
+        //    public void Print()
+        //    {
+        //        Console.WriteLine("Printing Book: " + Title);
+        //    }
+        //}
+        #endregion
 
         static void Main(string[] args)
         {
@@ -191,6 +214,12 @@ namespace Generic_sheet_route
             #region Q9: What is the 'new()' constraint? Write an example.
             //  new () is a constractor constraint
             // Repostor<el> r = new Repostor<el> ();
+            #endregion
+            #region Q10:  What is the interface constraint? Write an example.
+            // the constraint the type  must be an interface
+            //Printer<Book> p = new Printer<Book>();
+            //p.PrintItem(new Book());
+
             #endregion
 
         }
