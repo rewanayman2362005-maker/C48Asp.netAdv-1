@@ -94,7 +94,19 @@ namespace Generic_sheet_route
 
         //}
         #endregion
+        #region Q7
+       
+        #region Q8 
+        //public class box<T> where T : class 
+        //{
+        //    public T Value { get; set; }
+        //    public box(T value)
+        //    {
+        //        Value = value;
+        //    }
 
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -153,6 +165,10 @@ namespace Generic_sheet_route
 
             #endregion
 
+            #region Q8: What is the 'class' constraint? Write an example.
+            // constraint the type must be struct 
+            //box<string> C = new box<string>("rewan");
+            #endregion
 
 
         }
