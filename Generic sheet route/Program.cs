@@ -194,6 +194,24 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q14 
+        //public class SafeList<T>
+        //{
+        //    private List<T> _list = new List<T>();
+        //    public void Add(T item)
+        //    {
+        //        _list.Add(item);
+        //    }
+        //    public T Get(int index)
+        //    {
+        //        if (index < 0 || index >= _list.Count)
+        //        {
+        //            return default(T);
+        //        }
+        //        return _list[index];
+        //    }
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -284,7 +302,12 @@ namespace Generic_sheet_route
             //If T is a reference type, it returns null.
             //It is used to initialize variables or return values from generic methods when the actual type of T is not known.
             #endregion
-
+            #region Q14: Write a SafeList<T> that returns default when the index is invalid.
+            //SafeList<int> safeList = new SafeList<int>();
+            //safeList.Add(10);
+            //safeList.Add(0);
+            //Console.WriteLine(safeList.Get(5));
+            #endregion
 
         }
     }
