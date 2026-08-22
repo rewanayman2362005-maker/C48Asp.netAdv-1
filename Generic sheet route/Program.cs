@@ -374,6 +374,23 @@ namespace Generic_sheet_route
             Each constructed type gets its own copy of static fields.
             */
             #endregion
-        }
+            #region Q19: How can you inherit from a generic class?
+            
+        //    public class Base<T>
+        //{
+        //    public T Value;
+        //}
+
+        //// 1. Specify type
+        //public class Derived : Base<int>
+        //{
+        //}
+
+        //// 2. Keep it generic
+        //public class Derived<T> : Base<T>
+        //{
+        //}
+        #endregion
     }
+}
 }
