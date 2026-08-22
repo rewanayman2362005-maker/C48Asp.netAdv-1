@@ -276,6 +276,14 @@ namespace Generic_sheet_route
             //Manager<Person> m = new Manager<Person>();
 
             #endregion
+            #region Q13: What does the 'default' keyword do in generics?
+
+
+            //The default keyword in generics is used to return the default value of the type parameter T.  
+            //If T is a value type, it returns zero.
+            //If T is a reference type, it returns null.
+            //It is used to initialize variables or return values from generic methods when the actual type of T is not known.
+            #endregion
 
 
         }
