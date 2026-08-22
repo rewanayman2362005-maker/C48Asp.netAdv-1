@@ -94,8 +94,7 @@ namespace Generic_sheet_route
 
         //}
         #endregion
-        #region Q7
-       
+
         #region Q8 
         //public class box<T> where T : class 
         //{
@@ -107,6 +106,25 @@ namespace Generic_sheet_route
 
         //}
         #endregion
+        #region Q9
+        //public class Repostor<T> where T : new()
+        //{
+        //    public T get () 
+        //    {
+        //        return new T () ;
+        //    }
+
+        //}
+        //public class el 
+        //{
+        //    public string name {  get; set; }
+        //    public el ()
+        //    {
+        //        name = "rewan";
+        //    }
+        //}
+        #endregion
+
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -170,6 +188,10 @@ namespace Generic_sheet_route
             //box<string> C = new box<string>("rewan");
             #endregion
 
+            #region Q9: What is the 'new()' constraint? Write an example.
+            //  new () is a constractor constraint
+            // Repostor<el> r = new Repostor<el> ();
+            #endregion
 
         }
     }
