@@ -147,7 +147,31 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q11
+        //public class Animal
+        //{
+        //    public virtual void Eat()
+        //    {
+        //        Console.WriteLine("Animal is eating");
+        //    }
+        //}
 
+        //public class AnimalShelter<T> where T : Animal
+        //{
+        //    public void Feed(T animal)
+        //    {
+        //        animal.Eat();
+        //    }
+        //}
+
+        //public class Dog : Animal
+        //{
+        //    public override void Eat()
+        //    {
+        //        Console.WriteLine("Dog is eating bones");
+        //    }
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -219,6 +243,11 @@ namespace Generic_sheet_route
             // the constraint the type  must be an interface
             //Printer<Book> p = new Printer<Book>();
             //p.PrintItem(new Book());
+
+            #endregion
+            #region Q11: What is the base class constraint? Write an example.
+            //AnimalShelter<Dog> shelter = new AnimalShelter<Dog>();
+            //shelter.Feed(new Dog());
 
             #endregion
 
