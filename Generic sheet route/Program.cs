@@ -2,7 +2,7 @@
 namespace Generic_sheet_route
 {
     internal class Program
-    {       
+    {
         #region Q2
         //public class continer<T>
         //{
@@ -16,6 +16,24 @@ namespace Generic_sheet_route
         //    public T GET()
         //    {return item; }
 
+        //}
+        #endregion
+        #region Q3 
+        //public class Pair<TKey, TValue>
+        //{
+        //    public TKey Key { get; set; }
+        //    public TValue Value { get; set; }
+
+        //    public Pair(TKey key, TValue value)
+        //    {
+        //        Key = key;
+        //        Value = value;
+        //    }
+
+        //    public void Display()
+        //    {
+        //        Console.WriteLine($"Key: {Key}, Value: {Value}");
+        //    }
         //}
         #endregion
 
@@ -35,6 +53,16 @@ namespace Generic_sheet_route
             //Console.WriteLine(obg2.GET());
 
             #endregion
+            #region Q3: What are multiple type parameters? Write Pair<TKey, TValue>.
+            // a generic class can have more than one type parameter
+            //Pair<int, string> p1 = new Pair<int, string>(1, "Ahmed");
+            //p1.Display(); 
+
+            //Pair<string, double> p2 = new Pair<string, double>("Price", 99.9);
+            //p2.Display();
+
+            #endregion
+
 
         }
     }
