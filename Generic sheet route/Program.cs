@@ -36,6 +36,18 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q4 
+        //partial class emp
+        //{
+        //    public static void Swap<T>(ref T x, ref T y)
+        //    {
+        //        T temp =x;
+        //        x = y;
+        //        y = temp;
+
+        //    }
+        //}
+        #endregion
 
         static void Main(string[] args)
         {
@@ -60,6 +72,21 @@ namespace Generic_sheet_route
 
             //Pair<string, double> p2 = new Pair<string, double>("Price", 99.9);
             //p2.Display();
+
+            #endregion
+            #region Q4: What is a generic method? Write Swap<T> method.
+            //  A method that can work with any type using a type parameter <T> 
+            //int x = 5;
+            //int y=10;
+            //Console.WriteLine($" before swap :{x}, {y}");
+            //emp.Swap<int>(ref x, ref y);
+            //Console.WriteLine($"  after swap :{x}, {y}");
+
+            //string a = "Hellow";
+            //string b = " world";
+            //Console.WriteLine($" before swap :{a}, {b}");
+            //emp.Swap<string>(ref a, ref b);
+            //Console.WriteLine($"After  swap :{a}, {b}");
 
             #endregion
 
