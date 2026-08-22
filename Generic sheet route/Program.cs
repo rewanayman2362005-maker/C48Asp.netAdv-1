@@ -1,6 +1,21 @@
 ﻿
 namespace Generic_sheet_route
-{
+{  
+    #region Q6 
+    //public  interface IRepository<T>
+    //{
+    //  public T Get(int id);
+
+    //}
+    //public class cll: IRepository<int>
+    //{
+    //  public int Get(int id)
+    //    {
+    //        return id;
+    //    }
+    //}
+    #endregion
+    
     internal class Program
     {
         #region Q2
@@ -115,6 +130,13 @@ namespace Generic_sheet_route
             //cl1.FindMax(arrr);
             #endregion
 
+            #region  Q6: What is a generic interface? Write IRepository<T>.
+            // interface can be taken any data type and must any class implemment must specifie type parmenter
+            // cll r1 = new cll();
+            //int result =  r1.Get(30506070);
+            // Console.WriteLine(result);
+
+            #endregion
 
 
         }
