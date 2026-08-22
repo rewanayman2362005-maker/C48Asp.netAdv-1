@@ -361,6 +361,13 @@ namespace Generic_sheet_route
             The 'in' keyword means T can only be used for input, like method parameters.
             */
             #endregion
+            #region Q17: What is the difference between covariance and contravariance?
+            /*
+            Covariance with 'out': For reading data. Converts from derived to base.
+            Contravariance with 'in': For writing data. Converts from base to derived.
+            Covariance is used in return types, Contravariance is used in parameter types.
+            */
+            #endregion
         }
     }
 }
