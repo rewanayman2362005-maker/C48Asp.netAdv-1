@@ -1,11 +1,452 @@
 ﻿
 namespace Generic_sheet_route
-{
+{  
+    #region Q6 
+    //public  interface IRepository<T>
+    //{
+    //  public T Get(int id);
+
+    //}
+    //public class cll: IRepository<int>
+    //{
+    //  public int Get(int id)
+    //    {
+    //        return id;
+    //    }
+    //}
+    #endregion
+    
     internal class Program
     {
+        #region Q2
+        //public class continer<T>
+        //{
+        //    public T item;
+
+        //    public void Add(T item)
+
+        //    { this.item=item
+        //          ; }
+
+        //    public T GET()
+        //    {return item; }
+
+        //}
+        #endregion
+        #region Q3 
+        //public class Pair<TKey, TValue>
+        //{
+        //    public TKey Key { get; set; }
+        //    public TValue Value { get; set; }
+
+        //    public Pair(TKey key, TValue value)
+        //    {
+        //        Key = key;
+        //        Value = value;
+        //    }
+
+        //    public void Display()
+        //    {
+        //        Console.WriteLine($"Key: {Key}, Value: {Value}");
+        //    }
+        //}
+        #endregion
+        #region Q4 
+        //partial class emp
+        //{
+        //    public static void Swap<T>(ref T x, ref T y)
+        //    {
+        //        T temp =x;
+        //        x = y;
+        //        y = temp;
+
+        //    }
+        //}
+        #endregion
+        #region Q5 
+        //public class cl1
+        //{
+        //    public static T FindMax<T>(T[] array) where T : IComparable<T>
+        //    {
+        //        if (array == null || array.Length == 0)
+        //            throw new ArgumentException("Array is empty");
+
+        //        T max = array[0];
+
+        //        for (int i = 1; i < array.Length; i++) 
+        //        {
+        //            if (array[i].CompareTo(max) > 0) 
+        //            {
+        //                max = array[i];
+        //            }
+        //        }
+        //        return max;
+        //    }
+        //}
+        #endregion
+        #region Q7
+        //public class box <T> where T : struct
+        //    {
+        //    public T Value { get; set; }
+        //    public box (T value) {
+        //        Value = value;
+        //    }
+
+        //}
+        #endregion
+
+        #region Q8 
+        //public class box<T> where T : class 
+        //{
+        //    public T Value { get; set; }
+        //    public box(T value)
+        //    {
+        //        Value = value;
+        //    }
+
+        //}
+        #endregion
+        #region Q9
+        //public class Repostor<T> where T : new()
+        //{
+        //    public T get () 
+        //    {
+        //        return new T () ;
+        //    }
+
+        //}
+        //public class el 
+        //{
+        //    public string name {  get; set; }
+        //    public el ()
+        //    {
+        //        name = "rewan";
+        //    }
+        //}
+        #endregion
+        #region Q10
+        //public interface IPrintable
+        //{
+        //    void Print();
+        //}
+
+        //public class Printer<T> where T : IPrintable
+        //{
+        //    public void PrintItem(T item)
+        //    {
+        //        item.Print();
+        //    }
+        //}
+
+        //public class Book : IPrintable
+        //{
+        //    public string Title = "C# Book";
+        //    public void Print()
+        //    {
+        //        Console.WriteLine("Printing Book: " + Title);
+        //    }
+        //}
+        #endregion
+        #region Q11
+        //public class Animal
+        //{
+        //    public virtual void Eat()
+        //    {
+        //        Console.WriteLine("Animal is eating");
+        //    }
+        //}
+
+        //public class AnimalShelter<T> where T : Animal
+        //{
+        //    public void Feed(T animal)
+        //    {
+        //        animal.Eat();
+        //    }
+        //}
+
+        //public class Dog : Animal
+        //{
+        //    public override void Eat()
+        //    {
+        //        Console.WriteLine("Dog is eating bones");
+        //    }
+        //}
+        #endregion
+        #region Q12 
+        //public interface IComparable<T>
+        //{
+        //    int CompareTo(T other);
+        //}
+
+        //public class Person
+        //{
+        //    public string Name;
+        //}
+
+        //public class Manager<T> where T : class, Person, IComparable<T>, new()
+        //{
+        //    public T CreateAndCompare()
+        //    {
+        //        T obj1 = new T();
+        //        T obj2 = new T();
+        //        obj1.CompareTo(obj2);
+        //        return obj1;
+        //    }
+        //}
+        #endregion
+        #region Q14 
+        //public class SafeList<T>
+        //{
+        //    private List<T> _list = new List<T>();
+        //    public void Add(T item)
+        //    {
+        //        _list.Add(item);
+        //    }
+        //    public T Get(int index)
+        //    {
+        //        if (index < 0 || index >= _list.Count)
+        //        {
+        //            return default(T);
+        //        }
+        //        return _list[index];
+        //    }
+        //}
+        #endregion
+        #region Q15 
+        //public class Animal { }
+        //public class Dog : Animal { }
+
+        //public interface IProducer<out T>
+        //{
+        //    T Get();
+        //}
+
+        //public class DogProducer : IProducer<Dog>
+        //{
+        //    public Dog Get() { return new Dog(); }
+        //}
+
+        //static void Main()
+        //{
+        //    IProducer<Dog> dog = new DogProducer();
+        //    IProducer<Animal> animal = dog; // Covariance
+        //} 
+        #endregion
+        #region Q16 
+        //public class Animal { }
+        //public class Dog : Animal { }
+
+        //public interface IConsumer<in T>
+        //{
+        //    void Process(T item);
+        //}
+
+        //public class AnimalConsumer : IConsumer<Animal>
+        //{
+        //    public void Process(Animal item) { }
+        //}
+
+        //static void Main()
+        //{
+        //    IConsumer<Animal> animal = new AnimalConsumer();
+        //    IConsumer<Dog> dog = animal; // Contravariance
+        //}
+        #endregion
+        #region Q20
+        //public class Cache<TKey, TValue>
+        //{
+        //    private Dictionary<TKey, (TValue Value, DateTime Expiration)> _cache = new Dictionary<TKey, (TValue, DateTime)>();
+
+        //    public void Add(TKey key, TValue value, TimeSpan expiration)
+        //    {
+        //        _cache[key] = (value, DateTime.Now.Add(expiration)); 
+        //    }
+
+        //    public TValue Get(TKey key)
+        //    {
+        //        if (_cache.TryGetValue(key, out var entry))
+        //        {
+        //            if (DateTime.Now < entry.Expiration) 
+        //                return entry.Value;
+        //            else
+        //                _cache.Remove(key); 
+        //        }
+        //        return default(TValue); 
+        //    }
+
+        //    public void Remove(TKey key)
+        //    {
+        //        _cache.Remove(key);
+        //    }
+
+        //    public bool Contains(TKey key)
+        //    {
+        //        return _cache.ContainsKey(key) && DateTime.Now < _cache[key].Expiration; 
+        //    }
+        //}
+        #endregion
         static void Main(string[] args)
         {
+            #region Q1: What is a generic class? Why use generics?
+            //  class that can work with any type using a type parameter <T> 
+            // becouse code relabilty and provid error , better performance , clear code 
+            #endregion
+            #region Q2: Write a generic class Container<T> with Add and Get methods.
+            //continer<int>  obj1= new continer<int> ();
+            //obj1.Add(1);
+            //Console.WriteLine(obj1.GET());
+
+            //continer<string> obg2 = new continer<string> ();
+            //obg2.Add("Hello");
+            //Console.WriteLine(obg2.GET());
+
+            #endregion
+            #region Q3: What are multiple type parameters? Write Pair<TKey, TValue>.
+            // a generic class can have more than one type parameter
+            //Pair<int, string> p1 = new Pair<int, string>(1, "Ahmed");
+            //p1.Display(); 
+
+            //Pair<string, double> p2 = new Pair<string, double>("Price", 99.9);
+            //p2.Display();
+
+            #endregion
+            #region Q4: What is a generic method? Write Swap<T> method.
+            //  A method that can work with any type using a type parameter <T> 
+            //int x = 5;
+            //int y=10;
+            //Console.WriteLine($" before swap :{x}, {y}");
+            //emp.Swap<int>(ref x, ref y);
+            //Console.WriteLine($"  after swap :{x}, {y}");
+
+            //string a = "Hellow";
+            //string b = " world";
+            //Console.WriteLine($" before swap :{a}, {b}");
+            //emp.Swap<string>(ref a, ref b);
+            //Console.WriteLine($"After  swap :{a}, {b}");
+
+            #endregion
+            #region  Q5: Write a generic method FindMax<T> that finds maximum value
+            //int[] arrr = { 1, 2, 3, 4, 5, };
+            //cl1.FindMax(arrr);
+            #endregion
+
+            #region  Q6: What is a generic interface? Write IRepository<T>.
+            // interface can be taken any data type and must any class implemment must specifie type parmenter
+            // cll r1 = new cll();
+            //int result =  r1.Get(30506070);
+            // Console.WriteLine(result);
+
+            #endregion
+            #region  Q7: What is the 'struct' constraint? Write an example.
+            // constraint the type must be struct 
+            //box<int> ob = new box<int>(5);
+
+            #endregion
+
+            #region Q8: What is the 'class' constraint? Write an example.
+            // constraint the type must be struct 
+            //box<string> C = new box<string>("rewan");
+            #endregion
+
+            #region Q9: What is the 'new()' constraint? Write an example.
+            //  new () is a constractor constraint
+            // Repostor<el> r = new Repostor<el> ();
+            #endregion
+            #region Q10:  What is the interface constraint? Write an example.
+            // the constraint the type  must be an interface
+            //Printer<Book> p = new Printer<Book>();
+            //p.PrintItem(new Book());
+
+            #endregion
+            #region Q11: What is the base class constraint? Write an example.
+            //AnimalShelter<Dog> shelter = new AnimalShelter<Dog>();
+            //shelter.Feed(new Dog());
+
+            #endregion
+            #region Q12: How do you apply multiple constraints? Write an example.
+            //Manager<Person> m = new Manager<Person>();
+
+            #endregion
+            #region Q13: What does the 'default' keyword do in generics?
+
+
+            //The default keyword in generics is used to return the default value of the type parameter T.  
+            //If T is a value type, it returns zero.
+            //If T is a reference type, it returns null.
+            //It is used to initialize variables or return values from generic methods when the actual type of T is not known.
+            #endregion
+            #region Q14: Write a SafeList<T> that returns default when the index is invalid.
+            //SafeList<int> safeList = new SafeList<int>();
+            //safeList.Add(10);
+            //safeList.Add(0);
+            //Console.WriteLine(safeList.Get(5));
+            #endregion
+            #region Q15: What is covariance? Explain the 'out' keyword.
+            /*
+            Covariance allows a generic type with a more derived type to be assigned to a generic type with a less derived type.
+            The 'out' keyword means T can only be used for output, like return types.
+            */
+            #endregion
+
+            #region Q16: What is contravariance? Explain the 'in' keyword.
+            /*
+            Contravariance allows a generic type with a less derived type to be assigned to a generic type with a more derived type.
+            The 'in' keyword means T can only be used for input, like method parameters.
+            */
+            #endregion
+            #region Q17: What is the difference between covariance and contravariance?
+            /*
+            Covariance with 'out': For reading data. Converts from derived to base.
+            Contravariance with 'in': For writing data. Converts from base to derived.
+            Covariance is used in return types, Contravariance is used in parameter types.
+            */
+            #endregion
+            #region Q18: How do static members work in generic types?
+            /*
+            Static members in generic classes are not shared across different type arguments.
+            Each constructed type gets its own copy of static fields.
+            */
+            #endregion
+            #region Q19: How can you inherit from a generic class?
+
+            //    public class Base<T>
+            //{
+            //    public T Value;
+            //}
+
+            //// 1. Specify type
+            //public class Derived : Base<int>
+            //{
+            //}
+
+            //// 2. Keep it generic
+            //public class Derived<T> : Base<T>
+            //{
+            //}
+            #endregion
+            #region Q20: Complete Exercise - Create a generic Cache<TKey, TValue>with Add, Get, Remove, Contains, and expiration support.
             
+                //Cache<string, string> cache = new Cache<string, string>();
+
+                //cache.Add("user1", "Ahmed", TimeSpan.FromSeconds(3));
+                //cache.Add("user2", "Sara", TimeSpan.FromSeconds(10));
+                //Console.WriteLine("Added 2 users");
+
+                //Console.WriteLine(cache.Contains("user1"));
+                //Console.WriteLine(cache.Get("user1"));
+
+                //System.Threading.Thread.Sleep(4000);
+
+                //Console.WriteLine(cache.Get("user1"));
+                //Console.WriteLine(cache.Contains("user1"));
+
+                //cache.Remove("user2");
+                //Console.WriteLine(cache.Contains("user2"));
+
+                //Console.ReadKey();
+            
+            #endregion
+
         }
     }
 }
