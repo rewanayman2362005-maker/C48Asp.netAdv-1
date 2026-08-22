@@ -232,7 +232,26 @@ namespace Generic_sheet_route
         //    IProducer<Animal> animal = dog; // Covariance
         //} 
         #endregion
+        #region Q16 
+        //public class Animal { }
+        //public class Dog : Animal { }
 
+        //public interface IConsumer<in T>
+        //{
+        //    void Process(T item);
+        //}
+
+        //public class AnimalConsumer : IConsumer<Animal>
+        //{
+        //    public void Process(Animal item) { }
+        //}
+
+        //static void Main()
+        //{
+        //    IConsumer<Animal> animal = new AnimalConsumer();
+        //    IConsumer<Dog> dog = animal; // Contravariance
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -336,6 +355,12 @@ namespace Generic_sheet_route
             */
             #endregion
 
+            #region Q16: What is contravariance? Explain the 'in' keyword.
+            /*
+            Contravariance allows a generic type with a less derived type to be assigned to a generic type with a more derived type.
+            The 'in' keyword means T can only be used for input, like method parameters.
+            */
+            #endregion
         }
     }
 }
