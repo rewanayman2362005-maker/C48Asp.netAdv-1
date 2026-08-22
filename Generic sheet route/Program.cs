@@ -172,6 +172,28 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q12 
+        //public interface IComparable<T>
+        //{
+        //    int CompareTo(T other);
+        //}
+
+        //public class Person
+        //{
+        //    public string Name;
+        //}
+
+        //public class Manager<T> where T : class, Person, IComparable<T>, new()
+        //{
+        //    public T CreateAndCompare()
+        //    {
+        //        T obj1 = new T();
+        //        T obj2 = new T();
+        //        obj1.CompareTo(obj2);
+        //        return obj1;
+        //    }
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -250,6 +272,11 @@ namespace Generic_sheet_route
             //shelter.Feed(new Dog());
 
             #endregion
+            #region Q12: How do you apply multiple constraints? Write an example.
+            //Manager<Person> m = new Manager<Person>();
+
+            #endregion
+
 
         }
     }
