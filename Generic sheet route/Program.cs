@@ -84,6 +84,16 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q7
+        //public class box <T> where T : struct
+        //    {
+        //    public T Value { get; set; }
+        //    public box (T value) {
+        //        Value = value;
+        //    }
+
+        //}
+        #endregion
 
         static void Main(string[] args)
         {
@@ -137,6 +147,12 @@ namespace Generic_sheet_route
             // Console.WriteLine(result);
 
             #endregion
+            #region  Q7: What is the 'struct' constraint? Write an example.
+            // constraint the type must be struct 
+            //box<int> ob = new box<int>(5);
+
+            #endregion
+
 
 
         }
