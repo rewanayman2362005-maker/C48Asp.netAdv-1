@@ -212,6 +212,27 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q15 
+        //public class Animal { }
+        //public class Dog : Animal { }
+
+        //public interface IProducer<out T>
+        //{
+        //    T Get();
+        //}
+
+        //public class DogProducer : IProducer<Dog>
+        //{
+        //    public Dog Get() { return new Dog(); }
+        //}
+
+        //static void Main()
+        //{
+        //    IProducer<Dog> dog = new DogProducer();
+        //    IProducer<Animal> animal = dog; // Covariance
+        //} 
+        #endregion
+
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -307,6 +328,12 @@ namespace Generic_sheet_route
             //safeList.Add(10);
             //safeList.Add(0);
             //Console.WriteLine(safeList.Get(5));
+            #endregion
+            #region Q15: What is covariance? Explain the 'out' keyword.
+            /*
+            Covariance allows a generic type with a more derived type to be assigned to a generic type with a less derived type.
+            The 'out' keyword means T can only be used for output, like return types.
+            */
             #endregion
 
         }
