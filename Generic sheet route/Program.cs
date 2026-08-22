@@ -368,6 +368,12 @@ namespace Generic_sheet_route
             Covariance is used in return types, Contravariance is used in parameter types.
             */
             #endregion
+            #region Q18: How do static members work in generic types?
+            /*
+            Static members in generic classes are not shared across different type arguments.
+            Each constructed type gets its own copy of static fields.
+            */
+            #endregion
         }
     }
 }
