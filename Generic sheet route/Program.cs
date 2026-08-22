@@ -48,6 +48,27 @@ namespace Generic_sheet_route
         //    }
         //}
         #endregion
+        #region Q5 
+        //public class cl1
+        //{
+        //    public static T FindMax<T>(T[] array) where T : IComparable<T>
+        //    {
+        //        if (array == null || array.Length == 0)
+        //            throw new ArgumentException("Array is empty");
+
+        //        T max = array[0];
+
+        //        for (int i = 1; i < array.Length; i++) 
+        //        {
+        //            if (array[i].CompareTo(max) > 0) 
+        //            {
+        //                max = array[i];
+        //            }
+        //        }
+        //        return max;
+        //    }
+        //}
+        #endregion
 
         static void Main(string[] args)
         {
@@ -89,6 +110,11 @@ namespace Generic_sheet_route
             //Console.WriteLine($"After  swap :{a}, {b}");
 
             #endregion
+            #region  Q5: Write a generic method FindMax<T> that finds maximum value
+            //int[] arrr = { 1, 2, 3, 4, 5, };
+            //cl1.FindMax(arrr);
+            #endregion
+
 
 
         }
