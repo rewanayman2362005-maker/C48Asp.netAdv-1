@@ -252,6 +252,39 @@ namespace Generic_sheet_route
         //    IConsumer<Dog> dog = animal; // Contravariance
         //}
         #endregion
+        #region Q20
+        //public class Cache<TKey, TValue>
+        //{
+        //    private Dictionary<TKey, (TValue Value, DateTime Expiration)> _cache = new Dictionary<TKey, (TValue, DateTime)>();
+
+        //    public void Add(TKey key, TValue value, TimeSpan expiration)
+        //    {
+        //        _cache[key] = (value, DateTime.Now.Add(expiration)); 
+        //    }
+
+        //    public TValue Get(TKey key)
+        //    {
+        //        if (_cache.TryGetValue(key, out var entry))
+        //        {
+        //            if (DateTime.Now < entry.Expiration) 
+        //                return entry.Value;
+        //            else
+        //                _cache.Remove(key); 
+        //        }
+        //        return default(TValue); 
+        //    }
+
+        //    public void Remove(TKey key)
+        //    {
+        //        _cache.Remove(key);
+        //    }
+
+        //    public bool Contains(TKey key)
+        //    {
+        //        return _cache.ContainsKey(key) && DateTime.Now < _cache[key].Expiration; 
+        //    }
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Q1: What is a generic class? Why use generics?
@@ -375,22 +408,45 @@ namespace Generic_sheet_route
             */
             #endregion
             #region Q19: How can you inherit from a generic class?
+
+            //    public class Base<T>
+            //{
+            //    public T Value;
+            //}
+
+            //// 1. Specify type
+            //public class Derived : Base<int>
+            //{
+            //}
+
+            //// 2. Keep it generic
+            //public class Derived<T> : Base<T>
+            //{
+            //}
+            #endregion
+            #region Q20: Complete Exercise - Create a generic Cache<TKey, TValue>with Add, Get, Remove, Contains, and expiration support.
             
-        //    public class Base<T>
-        //{
-        //    public T Value;
-        //}
+                //Cache<string, string> cache = new Cache<string, string>();
 
-        //// 1. Specify type
-        //public class Derived : Base<int>
-        //{
-        //}
+                //cache.Add("user1", "Ahmed", TimeSpan.FromSeconds(3));
+                //cache.Add("user2", "Sara", TimeSpan.FromSeconds(10));
+                //Console.WriteLine("Added 2 users");
 
-        //// 2. Keep it generic
-        //public class Derived<T> : Base<T>
-        //{
-        //}
-        #endregion
+                //Console.WriteLine(cache.Contains("user1"));
+                //Console.WriteLine(cache.Get("user1"));
+
+                //System.Threading.Thread.Sleep(4000);
+
+                //Console.WriteLine(cache.Get("user1"));
+                //Console.WriteLine(cache.Contains("user1"));
+
+                //cache.Remove("user2");
+                //Console.WriteLine(cache.Contains("user2"));
+
+                //Console.ReadKey();
+            
+            #endregion
+
+        }
     }
-}
 }
